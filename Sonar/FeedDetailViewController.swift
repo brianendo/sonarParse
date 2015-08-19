@@ -7,13 +7,44 @@
 //
 
 import UIKit
+import Parse
 
 class FeedDetailViewController: UIViewController {
-
+    
+    var postVC: PFObject?
+    
+    @IBOutlet weak var usernameLabel: UILabel!
+    
+    @IBOutlet weak var postTextView: UITextView!
+    
+    @IBOutlet weak var dateLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        var post = postVC!
+        var dataFormatter: NSDateFormatter = NSDateFormatter()
+        dataFormatter.dateFormat = "MM-dd HH:mm"
+        self.dateLabel.text = dataFormatter.stringFromDate(post.createdAt!)
+        // Since post only has the user id
+        var findUser = PFUser.query()!
+        if let userId = post.objectForKey("user")!.objectId! {
+            println(userId)
+            findUser.whereKey("objectId", equalTo: userId)
+            
+            findUser.findObjectsInBackgroundWithBlock({
+                (objects:[AnyObject]?, error: NSError?)-> Void in
+                if error == nil {
+                    if let objects = objects as? [PFUser] {
+                        let user:PFUser = objects.last!
+                        self.usernameLabel.text = user.username
+                    }
+                }
+            })
+        }
+        
+        self.postTextView.text = post.objectForKey("content") as! String
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +52,5 @@ class FeedDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
