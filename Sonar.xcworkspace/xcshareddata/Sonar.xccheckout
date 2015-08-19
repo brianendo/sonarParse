@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C76EDA41-DD5C-4A45-B984-6859A5E523FF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Sonar</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0883B584DF7EA75D5CF02428652DC4D980D9C7C2</key>
+		<string>https://github.com/brianendo/sonar.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Sonar.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0883B584DF7EA75D5CF02428652DC4D980D9C7C2</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/brianendo/sonar.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0883B584DF7EA75D5CF02428652DC4D980D9C7C2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0883B584DF7EA75D5CF02428652DC4D980D9C7C2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Sonar</string>
+		</dict>
+	</array>
+</dict>
+</plist>
