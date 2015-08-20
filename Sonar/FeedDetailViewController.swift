@@ -11,6 +11,7 @@ import Parse
 
 class FeedDetailViewController: UIViewController {
     
+    // Create Object to pull from feedView
     var postVC: PFObject?
     
     @IBOutlet weak var usernameLabel: UILabel!
@@ -22,15 +23,20 @@ class FeedDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Use PostObject selected from feedView
         var post = postVC!
+        
+        // Pull date from post foor dateLabel
         var dataFormatter: NSDateFormatter = NSDateFormatter()
         dataFormatter.dateFormat = "MM-dd HH:mm"
         self.dateLabel.text = dataFormatter.stringFromDate(post.createdAt!)
-        // Since post only has the user id
+        
+        // Post has the User object so must query into object to get userId
         var findUser = PFUser.query()!
         if let userId = post.objectForKey("user")!.objectId! {
-            println(userId)
+            
+//            println(userId)
+            
             findUser.whereKey("objectId", equalTo: userId)
             
             findUser.findObjectsInBackgroundWithBlock({

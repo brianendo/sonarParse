@@ -10,6 +10,8 @@ import UIKit
 
 class FeedTableViewCell: UITableViewCell {
     
+    
+    // Made outlets for TableViewCell...Edited in FeedVC
     @IBOutlet weak var usernameLabel: UILabel!
     
     @IBOutlet weak var timestampLabel: UILabel!

@@ -84,6 +84,8 @@
 		8EE327F41B854875000F4500 /* JSQMessagesTypingIndicatorFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE327C31B854875000F4500 /* JSQMessagesTypingIndicatorFooterView.m */; };
 		8EE327F51B854875000F4500 /* JSQMessagesTypingIndicatorFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EE327C41B854875000F4500 /* JSQMessagesTypingIndicatorFooterView.xib */; };
 		8EE327FA1B8548F4000F4500 /* JSQSystemSoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE327F91B8548F4000F4500 /* JSQSystemSoundPlayer.m */; };
+		8EE327FC1B85A838000F4500 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE327FB1B85A838000F4500 /* Message.swift */; };
+		8EE327FE1B85A86C000F4500 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE327FD1B85A86C000F4500 /* MessageViewController.swift */; };
 		DBE1A5814691B8E611B0277E /* libPods-Sonar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE5B33FDEF2882705253A03 /* libPods-Sonar.a */; };
 /* End PBXBuildFile section */
 
@@ -211,6 +213,8 @@
 		8EE327C41B854875000F4500 /* JSQMessagesTypingIndicatorFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSQMessagesTypingIndicatorFooterView.xib; sourceTree = "<group>"; };
 		8EE327F81B8548F4000F4500 /* JSQSystemSoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSQSystemSoundPlayer.h; sourceTree = "<group>"; };
 		8EE327F91B8548F4000F4500 /* JSQSystemSoundPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSQSystemSoundPlayer.m; sourceTree = "<group>"; };
+		8EE327FB1B85A838000F4500 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		8EE327FD1B85A86C000F4500 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +290,8 @@
 				8EE138961B83B04200A8A665 /* FeedTableViewCell.swift */,
 				8EE138941B83ADEC00A8A665 /* CreateViewController.swift */,
 				8EE138A11B83F13C00A8A665 /* Main.storyboard */,
+				8EE327FB1B85A838000F4500 /* Message.swift */,
+				8EE327FD1B85A86C000F4500 /* MessageViewController.swift */,
 				8EE1389C1B83E71500A8A665 /* Login/Signup */,
 				8EE1385C1B83A7F300A8A665 /* Images.xcassets */,
 				8EE1385E1B83A7F300A8A665 /* LaunchScreen.xib */,
@@ -704,6 +710,7 @@
 				8EE327EF1B854875000F4500 /* JSQMessagesLabel.m in Sources */,
 				8EE1389B1B83E4F900A8A665 /* StartViewController.swift in Sources */,
 				8EE327F21B854875000F4500 /* JSQMessagesToolbarContentView.m in Sources */,
+				8EE327FE1B85A86C000F4500 /* MessageViewController.swift in Sources */,
 				8EE327DD1B854875000F4500 /* JSQMessagesViewController.m in Sources */,
 				8EE327E31B854875000F4500 /* JSQMessagesCollectionViewFlowLayout.m in Sources */,
 				8EE327DF1B854875000F4500 /* JSQMessagesAvatarFactory.m in Sources */,
@@ -721,6 +728,7 @@
 				8EE327FA1B8548F4000F4500 /* JSQSystemSoundPlayer.m in Sources */,
 				8EE138971B83B04200A8A665 /* FeedTableViewCell.swift in Sources */,
 				8EE327DA1B854875000F4500 /* UIImage+JSQMessages.m in Sources */,
+				8EE327FC1B85A838000F4500 /* Message.swift in Sources */,
 				8EE138561B83A7F300A8A665 /* AppDelegate.swift in Sources */,
 				8EE327DC1B854875000F4500 /* JSQMessagesKeyboardController.m in Sources */,
 				8EE138951B83ADEC00A8A665 /* CreateViewController.swift in Sources */,
